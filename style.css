@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("open-sans/OpenSans-Regular.ttf")
+}
+
 body {
     margin: 0px;
     padding: 0px;
     user-select: none;
+    font-family: Open Sans;
 }
 
 #amount-of-seconds {
@@ -16,11 +22,12 @@ body {
 
 #start-button, #pause-button {
     font-size: 30px;
-    color: red;
+    color: #444343;
     border-radius: 15px;
-    border: 2px solid red;
+    border: 2px solid #444343;
+    background-color: #998a8a6e;
     display: inline-block;
-    margin: 10px 0px;
+    margin: 10px 5px;
     padding: 1px 7px 5px
 }
 
@@ -30,9 +37,9 @@ body {
 }
 
 #seconds-meter {
-    background-color: black;
+    background-color: #524d4d;
     color: white;
     font-size: 50px;
-    width: 200px;
+    width: 220px;
     display: inline-block;
 }
