@@ -5,18 +5,24 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-        <div>
+        <div class="center" id="amount-of-seconds-outer">
             Звуковой сигнал каждые
             <input id="amount-of-seconds" type="text" value="70">
             секунд
-            <div id="start-button-outer">
-                <div id="start-button">
-                    начать
-                </div>
+        </div>
+        <div class="center">
+            <div id="start-button">
+                начать
+            </div>
+            <div id="pause-button">
+                остановить
             </div>
         </div>
+        <div class="center">
+            <div id="seconds-meter">0:0:0.0</div>
+        </div>
         <div>
-            <audio id="main-audio" controls src="sound.mp3"></audio>
+            <audio id="main-audio" src="sound.mp3"></audio>
         </div>
         <script src="main.js"></script>
 	</body>
