@@ -42,6 +42,12 @@ function secondsMeterActions() {
             `${diffHours}:${diffMinutes}:${diffSeconds}`
         secondsMeterElement.innerHTML = diffString
     }, 100)
+
+    let bodyElement = document.body
+    bodyElement.style.background = 'red'
+    setTimeout(function() {
+        bodyElement.style.background = 'white'
+    }, 300)
 }
 
 let pauseButton = document.getElementById('pause-button')
